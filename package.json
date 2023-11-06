@@ -1,0 +1,31 @@
+{
+  "name": "02-api-rest-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint src --ext .ts --fix"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Renan Pereira Loureiro",
+    "email": "renanloureiro.dev@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@types/node": "^20.8.10",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.0.3",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "fastify": "^4.24.3",
+    "knex": "^3.0.1",
+    "sqlite3": "^5.1.6"
+  }
+}
