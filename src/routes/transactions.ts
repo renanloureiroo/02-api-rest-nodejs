@@ -17,12 +17,12 @@ export const transactionsRoutes = async (app: FastifyInstance) => {
       request.body,
     )
 
-    const transaction = await knex('transactions').insert({
+    await knex('transactions').insert({
       id: randomUUID(),
       title,
       amount: type === 'credit' ? amount : amount * -1,
     })
 
-    return response.code(201).send(transaction)
+    return response.code(201).send()
   })
 }
